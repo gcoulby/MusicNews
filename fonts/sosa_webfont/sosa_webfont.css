@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'sosa-regular';
+    src: url('sosa-regular-webfont.eot');
+    src: url('sosa-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('sosa-regular-webfont.woff') format('woff'),
+    url('sosa-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

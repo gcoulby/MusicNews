@@ -1,0 +1,496 @@
+
+/*=================================================================================/
+Google Font API
+*/
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic);
+/*--------------------------------------------------------------------------------*/
+
+@import url(reset.css); /*Consistence across browsers*/
+
+@font-face {
+    font-family: 'sosa-regular';
+    src: url('../fonts/sosa_webfont/sosa-regular-webfont.eot');
+    src: url('../fonts/sosa_webfont/sosa-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/sosa_webfont/sosa-regular-webfont.woff') format('woff'),
+    url('../fonts/sosa_webfont/sosa-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    font-family: 'Lato', serif;
+    background:#ebebeb;
+    min-width: 900px;
+    font-size:16px;
+}
+
+p
+{
+    line-height: 1.5em;
+}
+
+h1
+{
+    font-size: 2em;
+    color: #118dbb;
+    margin-bottom: 1em;
+}
+
+
+#container
+{
+    width:80%;
+    margin:auto;
+    padding: 2.5em 2% 2.5em 2%;
+    clear:left;
+}
+
+#container.with_widget
+{
+    width:80%;
+    margin:auto;
+}
+
+.button
+{
+    display: inline-block;
+    /*padding: 0.7em 1em;*/
+    color: white;
+    font-size: 1em;
+    width:auto;
+    /*width: 5em;*/
+    /*height: 2em;*/
+    background: #118dbb;
+    border: none;
+    cursor: pointer;
+}
+.button:hover
+{
+    background: #49b5ff;
+}
+
+a
+{
+    text-decoration: none;
+    color: #118dbb;
+}
+
+a:hover
+{
+    color: #49b5ff;
+}
+
+body.admin_bar_margin
+{
+    margin-top:4.5em;
+}
+
+.hide
+{
+    display:none;
+}
+
+.show
+{
+    display: block;
+}
+
+/*================================================================================/
+Header
+*/
+    #header
+    {
+        background: white;
+    }
+
+    #logo
+    {
+        margin-top:1em;
+        /*width:100%;*/
+        float:left;
+        max-width:512px;
+    }
+    /*============================================================================/
+    Login
+    */
+        #login
+        {
+            margin: 5em 2.5em 1.5em 0em;
+            float: right;
+            text-align: right;
+        }
+
+        #login .label
+        {
+            float:left;
+            margin: 1em 0.5em 0 0;
+            color: #118dbb;
+        }
+
+        .inputField
+        {
+            font-size: 1em;
+            padding: 0em 0.8em;
+            height:2em;
+            margin: 0.4em 0em 1em 0em;
+        }
+
+        input[type="submit"]
+        {
+            color: white;
+            font-size: 1em;
+            width: 5em;
+            height: 2em;
+            background: #118dbb;
+            border: none;
+        }
+
+        input[type="submit"]:hover
+        {
+            background: #49b5ff;
+        }
+    /*---------------------------------------------------------------------------*/
+
+    /*================================================================================/
+    Logged In User Bar
+    */
+        #user_bar
+        {
+            background: black;
+            color: white;
+            padding:0.5em;
+            position:fixed;
+            top:0;
+            width:100%;
+            z-index: 100;
+            margin-bottom: 2em;
+        }
+
+        #welcome_note
+        {
+            margin: 12em 2.5em 1.5em 0em;
+            float: right;
+            text-align: right;
+        }
+
+        #user_bar a
+        {
+            color:white;
+            padding:1em;
+        }
+
+        .logout
+        {
+            float:right;
+            margin-right: 1.5em;
+        }
+
+        #user_bar .button
+        {
+            color: white;
+            background: black;
+            padding:1em;
+        }
+        #user_bar .button:hover
+        {
+            background: #303030 !important;
+        }
+
+        #user_bar a.selected
+        {
+            background: #303030;
+        }
+
+
+
+    /*-------------------------------------------------------------------------------*/
+
+    /*============================================================================/
+    Navigation
+    */
+        #nav
+        {
+            color: white;
+            clear: both;
+            background: #118dbb;
+            padding: 1em 2.5em 1em 2.5em;
+            height:3em;
+            position: relative;
+        }
+
+        #nav ul
+        {
+            display: inline-block;
+            margin-top:1em;
+            float: left;
+        }
+
+        #nav ul li
+        {
+            margin-right:2em;
+            display: inline-block;
+        }
+
+        #nav ul li a
+        {
+            text-decoration: none;
+            color: white;
+            padding:1.4em;
+        }
+
+        #nav ul li a:hover
+        {
+            background: #49b5ff !important;
+        }
+
+        #nav ul li a.selected
+        {
+            background: #16b0eb;
+        }
+
+        html.translated-ltr #user_bar, html.translated-ltr #user_bar
+        {
+            padding-top: 39px;
+        }
+        .goog-te-gadget-simple {
+        margin-top: 1em;
+        }
+
+        .searchField
+        {
+        font-size: 1em;
+        padding: 0em 0.8em;
+        height:2.3em;
+}
+
+
+        .searchForm
+        {
+            position:absolute;
+            top:1.2em;
+            right:2.5em;
+        }
+
+        .searchSubmit
+        {
+            font-family: 'sosa-regular', serif;
+            font-size:1.2em !important;
+            width:auto !important;
+            margin-left:-0.3em;
+            border-top: 2px groove white !important;
+            border-right: 1px solid white !important;
+            border-bottom: 1px solid white !important;
+            cursor: pointer;
+        }
+    /*---------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------*/
+
+
+
+/*================================================================================/
+Feed Items
+*/
+    .feed_item
+    {
+        border-top: 0.5em solid #118dbb;
+        position: relative;
+        overflow: auto;
+        background: white;
+        /*width:100%;*/
+        padding: 1.5em;
+        margin-bottom: 2.5em;
+    }
+
+    .feed_item_body
+    {
+        width:70%;
+        height: 80%;
+        float:left;
+    }
+
+
+    .feed_item h2
+    {
+        font-size: 2em;
+        color: #118dbb;
+    }
+    .feed_item_date
+    {
+        font-size: 0.8em;
+        line-height: 4em;
+    }
+
+    .feed_item_text
+    {
+
+    }
+
+    .feed_item_image_block
+    {
+        float:right;
+        width: 18%;
+    }
+
+    .feed_item_image
+    {
+        width: 100%;
+    }
+
+    .feed_item .button
+    {
+        position: absolute;
+        bottom: 1.5em;
+        left: 1.5em;
+        cursor: pointer;
+    }
+
+    .feed_item_like
+    {
+        font-family: 'sosa-regular', serif !important;
+        background: #118dbb;
+        color: white;
+        position: absolute;
+        top:0;
+        right:0;
+        padding: 0.2em;
+        font-size: 2em;
+    }
+
+    .feed_item_select
+    {
+        background: #118dbb;
+        color: white;
+        position: absolute;
+        top:0;
+        right:0;
+        padding: 0em 0.4em 0.4em 0.35em;
+        font-size: 2em;
+    }
+
+    #save_art_sub
+    {
+        position: fixed;
+        width: auto !important;
+        height:auto !important;
+        padding:1.7em;
+        display: none;
+        top: 0;
+        right: 50%;
+        margin-right: -96px;
+        z-index: 105;
+        cursor: pointer;
+    }
+/*-------------------------------------------------------------------------------*/
+
+/*================================================================================/
+Signup Form
+*/
+.form-box
+{
+    width: 21%;
+    margin:auto;
+    text-align: right;
+}
+/*-------------------------------------------------------------------------------*/
+
+/*================================================================================/
+Sidebar
+*/
+    #sidebar
+    {
+        /*position: fixed;*/
+
+        float: right;
+        width: 28.68%;
+        background:#ebebeb;
+        padding: 2.5em 2% 0em 2%;
+    }
+
+    #sidebar.scroll
+    {
+        position:fixed;
+        right: 0;
+        top:0em;
+    }
+
+    #sidebar.user_bar_margin
+    {
+        top:3.5em;
+    }
+
+    .widget
+    {
+        border-top: 0.5em solid #118dbb;
+        position: relative;
+        overflow: auto;
+        background: white;
+        padding: 1.5em;
+        margin-bottom: 0em;
+    }
+
+    .widget_title
+    {
+        font-size: 2em;
+        color: #118dbb;
+    }
+
+    .widget_image
+    {
+        width: 29%;
+        margin: 3% 2%;
+    }
+
+/*-------------------------------------------------------------------------------*/
+
+/*================================================================================/
+Footer
+*/
+    .pagination-block
+    {
+        float: right;
+    }
+
+    .pagination-block
+    {
+        background: white;
+        display: inline;
+        padding:0.5em 0em;
+        margin: -0.8em 0em 0em 1em;
+        font-weight: bold;
+        border: 2px solid #118dbb;
+    }
+
+    .pagination-block a:hover
+    {
+        background: #dbe5dd;
+        color: #0d3941;
+    }
+
+    .pagination-block a
+    {
+        padding: 0.4em 1em;
+    }
+
+    .current_page
+    {
+        background: #c1c9c2;
+    }
+
+    .current_page a
+    {
+        color: #0d3941;
+    }
+
+    #footer
+    {
+        background: #118dbb;
+        padding: 1.5em 3em;
+        color: white;
+    }
+    #footer p
+    {
+        line-height: 1.5em;
+    }
+/*-------------------------------------------------------------------------------*/
